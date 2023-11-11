@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SimpleStudios from "../../../public/projects/simple-studios.png";
 import Asl from "../../../public/projects/ASL.png";
-import Oxilife from "../../../public/projects/OXILIFE.png";
+// import Oxilife from "../../../public/projects/OXILIFE.png";
 
 const Playfair = Playfair_Display({
   subsets: ["latin"],
@@ -19,12 +19,12 @@ export default function Projects() {
       image: SimpleStudios,
       link: "https://www.simple-studios-uy.com",
     },
-    {
-      id: "oxilife",
-      label: "Oxilife (En proceso)",
-      image: Oxilife,
-      link: "#projects",
-    },
+    // {
+    //   id: "oxilife",
+    //   label: "Oxilife (En proceso)",
+    //   image: Oxilife,
+    //   link: "#projects",
+    // },
     {
       id: "asl",
       label: "ASL",
