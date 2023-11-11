@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ThemeSwitcher from "./switch";
+// import ThemeSwitcher from "./switch";
 import { Playfair_Display } from "next/font/google";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
