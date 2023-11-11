@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brown: #694c37;
+  --white: #f0eee8;
+  --grey-100: #797c74;
+  --grey-50: #949085;
+  --grey-150: #777872;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body,
+main {
+  color: var(--brown);
+}
+
+.white-bg {
+  background-color: var(--white);
+}
+
+.brown-bg {
+  background-color: var(--brown);
+}
