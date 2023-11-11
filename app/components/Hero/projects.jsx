@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SimpleStudios from "../../../public/projects/simple-studios.png";
 import Asl from "../../../public/projects/ASL.png";
-import Oxilife from "../../../public/projects/OXILIFE.png";
+import Oxilife from "../../../public/OXILIFE.png";
 
 const Playfair = Playfair_Display({
   subsets: ["latin"],
