@@ -1,6 +1,7 @@
 import "./globals.css";
 // import Providers from "./Providers";
 import Navbar from "./components/Navbar/navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Lautaro Chini",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className={`white-bg`}>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
