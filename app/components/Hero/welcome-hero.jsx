@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { Play, Playfair_Display } from "next/font/google";
-import Spline from "@splinetool/react-spline";
+import { Playfair_Display } from "next/font/google";
+
 import Image from "next/image";
 import avatar from "../../../public/avatar.png";
 // import { GeistSans } from "geist/font";

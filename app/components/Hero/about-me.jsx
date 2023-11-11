@@ -5,7 +5,6 @@ import Image from "next/image";
 import AboutPhoto from "../../../public/about-photo.png";
 import Link from "next/link";
 import avatarPhoto from "../../../public/avatar-about.png";
-import avatar from "../../../public/avatar.png";
 
 const Playfair = Playfair_Display({
   subsets: ["latin"],

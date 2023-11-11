@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import WelcomeHero from "./components/Hero/welcome-hero";
 import About from "./components/Hero/about-me";
 import Projects from "./components/Hero/projects";

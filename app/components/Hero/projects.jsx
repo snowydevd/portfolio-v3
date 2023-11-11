@@ -2,9 +2,7 @@
 import React from "react";
 import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
-import AboutPhoto from "../../../public/about-photo.png";
 import Link from "next/link";
-import avatarPhoto from "../../../public/avatar-about.png";
 import SimpleStudios from "../../../public/projects/simple-studios.png";
 import Asl from "../../../public/projects/ASL.png";
 import Oxilife from "../../../public/projects/OXILIFE.png";

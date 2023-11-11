@@ -2,9 +2,9 @@ import React from "react";
 import ContactForm from "../ContactForm/ContactForm";
 
 import { Playfair_Display } from "next/font/google";
-import Image from "next/image";
-import AboutPhoto from "../../../public/about-photo.png";
-import Link from "next/link";
+// import Image from "next/image";
+// import AboutPhoto from "../../../public/about-photo.png";
+// import Link from "next/link";
 
 const Playfair = Playfair_Display({
   subsets: ["latin"],
