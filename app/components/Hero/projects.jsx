@@ -60,9 +60,7 @@ export default function Projects() {
 
                   <h1
                     className={`${Playfair.className} text-2xl text-yellow-800`}
-                  >
-                    {project.label}
-                  </h1>
+                  ></h1>
                 </div>
               </div>
             );

@@ -31,8 +31,8 @@ export default function Navbar() {
   ];
   // console.log(pathname);
   return (
-    <div className="w-full flex justify-center items-center sticky top-[2%] overflow-visible backdrop-blur-md">
-      <nav className="w-full xl:w-[900px] flex flex-row justify-between items-center py-2 px-2 rounded-lg">
+    <div className="w-full flex justify-center items-center sticky top-0 overflow-visible backdrop-blur-md">
+      <nav className="w-full xl:w-[900px] flex flex-row justify-between items-center py-3 px-2 rounded-lg">
         <h3
           className={`${Playfair.className} text-3xl font-semibold mix-blend-normal`}
         >
