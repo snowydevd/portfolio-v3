@@ -58,7 +58,8 @@ export default function About() {
           </p>
           <p className="">
             Si quieres agendar una reunion conmigo no dudes en ponerte en
-            contacto conmigo via e-mail o por mis redes sociales.
+            contacto via <Link href="#contact">formulario</Link> o por mis redes
+            sociales.
           </p>
         </div>
         <Image
