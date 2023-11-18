@@ -1,7 +1,8 @@
 import "./globals.css";
-// import Providers from "./Providers";
+import Providers from "./Providers";
 import Navbar from "./components/Navbar/navbar";
 import { Analytics } from "@vercel/analytics/react";
+import { GeistSans } from "geist/font";
 
 export const metadata = {
   title: "Lautaro Chini",
@@ -11,10 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`white-bg`}>
-        <Navbar />
-        {children}
-        <Analytics />
+      <body
+        className={`${GeistSans.className} antialiased w-full flex flex-col justify-center items-center`}
+      >
+        <Providers>
+          <Navbar />
+          {children}
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );

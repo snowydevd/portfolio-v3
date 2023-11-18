@@ -2,14 +2,12 @@
 
 import React from "react";
 // import ThemeSwitcher from "./switch";
-import { Playfair_Display } from "next/font/google";
+
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
+import ThemeSwitcher from "./ThemeSwitcher";
 
-const Playfair = Playfair_Display({
-  subsets: ["latin"],
-});
 export default function Navbar() {
   const pathname = usePathname();
   const links = [
@@ -24,6 +22,11 @@ export default function Navbar() {
       link: "#projects",
     },
     {
+      id: "tecnologias",
+      label: "Tecnologias",
+      link: "#technologies",
+    },
+    {
       id: "contact",
       label: "Contacto",
       link: "#contact",
@@ -31,28 +34,23 @@ export default function Navbar() {
   ];
   // console.log(pathname);
   return (
-    <div className="w-full flex justify-center items-center sticky top-0 overflow-visible backdrop-blur-md">
-      <nav className="w-full xl:w-[900px] flex flex-row justify-between items-center py-3 px-2 rounded-lg">
-        <h3
-          className={`${Playfair.className} text-3xl font-semibold mix-blend-normal`}
-        >
-          <Link href="#home">LC</Link>
-        </h3>
+    <div className="w-full flex justify-center items-center sticky top-0 overflow-visible bg-base-100 z-50">
+      <nav className=" w-[750px] flex flex-row justify-between items-center">
         <div className="lg:block hidden">
-          <ul className={`${Playfair.className} flex items-center gap-5`}>
+          <ul className={`flex items-center gap-5`}>
             {links.map((link) => {
               return (
                 <li
                   key={link.id}
-                  className="text-md font-light hover:text-yellow-950 rounded-lg duration-100"
+                  className="text-md font-light hover:text-gray-500 rounded-lg duration-100 py-4"
                 >
                   <Link href={link.link}>{link.label}</Link>
                 </li>
               );
             })}
-            {/* <ThemeSwitcher /> */}
           </ul>
         </div>
+        <ThemeSwitcher />
         <div className="lg:hidden block">
           <div className="dropdown dropdown-end">
             <label

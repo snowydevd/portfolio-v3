@@ -118,7 +118,7 @@ export default function ContactForm() {
         <div className="m-5">
           <button
             onClick={handleSubmit}
-            className="bgColorAltItem p-2 rounded-lg font-bold brown-bg text-white hover:bg-yellow-950 duration-200 w-full"
+            className=" p-2 rounded-lg font-bold  bg-zinc-800 text-white hover:bg-zinc-950 duration-200 w-full"
             type="submit"
           >
             Enviar
@@ -134,7 +134,7 @@ export default function ContactForm() {
                   className={`${
                     success
                       ? "text-white bg-green-700 rounded-lg"
-                      : "text-white bg-red-800"
+                      : "text-white bg-red-800 rounded-lg"
                   } px-5 py-2`}
                 >
                   {e}

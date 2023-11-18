@@ -12,9 +12,11 @@ const Playfair = Playfair_Display({
 
 export default function Contact() {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
-      <h1 className={` ${Playfair.className} text-5xl`}>Contacto</h1>
-      <ContactForm />
+    <div className="w-full flex flex-col justify-start items-start mt-16">
+      <h1 className={`text-3xl font-bold`}>Contacto</h1>
+      <div className="w-full flex justify-center items-center">
+        <ContactForm />
+      </div>
     </div>
   );
 }

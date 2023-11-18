@@ -33,9 +33,9 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="w-full flex-col flex lg:items-center items-center justify-center  h-[60vh]">
-      <div className="w-full flex lg:justify-end lg:items-end items-center justify-center">
-        <h2 className={`${Playfair.className} text-6xl`}>Proyectos</h2>
+    <div className="w-full flex-col flex lg:items-center items-center justify-center mt-16">
+      <div className="w-full flex items-start justify-start">
+        <h2 className={` text-2xl font-bold`}>Proyectos destacados</h2>
       </div>
       <div
         className={` w-full mt-8 rounded-2xl text-white p-3 flex justify-between`}
