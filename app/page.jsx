@@ -20,6 +20,11 @@ export default function Home() {
           <div>
             <About />
           </div>
+          {/* <div className="w-full mt-3">
+            <video loop muted autoPlay className="rounded-lg">
+              <source src="/waves.mp4" type="video/mp4" />
+            </video>
+          </div> */}
           <div className="mt-10" id="projects">
             <Projects />
           </div>
