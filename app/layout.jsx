@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta property="og:url" content="https://www.chini-dev.me" />
         <meta
-          property="og:image"
+          property="og:thumbnail"
           content="https://cdn.discordapp.com/attachments/1012060083720556645/1177680812821450783/Lautaro_Chini.png?ex=657363ba&is=6560eeba&hm=a3590524c107df5bc8e6dbc674b0ab93c589a540f43f5da8a62502845d392717&"
         />
       </head>
