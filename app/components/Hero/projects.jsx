@@ -16,14 +16,6 @@ const Playfair = Playfair_Display({
 export default function Projects() {
   const projects = [
     {
-      id: "simplestudios",
-      label: "Simple Studios",
-      description: "Expande tu negocio en el mundo digital con Simple Studios.",
-      image: SimpleStudios,
-      date: "Julio 2023",
-      link: "https://www.simple-studios-uy.com",
-    },
-    {
       id: "thechange",
       label: "TheChange",
       description: "Simple landing design made",
@@ -40,6 +32,14 @@ export default function Projects() {
       date: "Septiembre 2023",
       image: Asl,
       link: "https://asl-marketing.vercel.app",
+    },
+    {
+      id: "simplestudios",
+      label: "Simple Studios",
+      description: "Expande tu negocio en el mundo digital con Simple Studios.",
+      image: SimpleStudios,
+      date: "Julio 2023",
+      link: "https://www.simple-studios-uy.com",
     },
     {
       id: "oxilife",
