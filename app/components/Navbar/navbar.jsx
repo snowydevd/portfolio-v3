@@ -58,14 +58,14 @@ export default function Navbar() {
   // console.log(pathname);
   return (
     <div className="w-full flex justify-center items-center sticky top-0 overflow-visible bg-base-100 z-50">
-      <nav className=" w-[750px] flex flex-row justify-between items-center border-b">
+      <nav className=" w-[750px] flex flex-row justify-between items-center border-b px-3 lg:px-0">
         <div className="lg:block hidden">
-          <ul className={`flex items-center gap-5 `}>
+          <ul className={`flex items-center gap-4 `}>
             {links.map((link) => {
               return (
                 <li
                   key={link.id}
-                  className="text-md font-light hover:text-gray-500 rounded-lg duration-100 py-4"
+                  className="text-sm font-light hover:text-gray-500 rounded-lg duration-100 py-4"
                 >
                   <Link href={link.link}>{link.label}</Link>
                 </li>

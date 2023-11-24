@@ -18,20 +18,36 @@ export default function Projects() {
     {
       id: "simplestudios",
       label: "Simple Studios",
+      description: "Expande tu negocio en el mundo digital con Simple Studios.",
       image: SimpleStudios,
+      date: "Julio 2023",
       link: "https://www.simple-studios-uy.com",
+    },
+    {
+      id: "thechange",
+      label: "TheChange",
+      description: "Simple landing design made",
+      date: "Octubre 2023",
+      image: Asl,
+      link: "https://the-change.vercel.app",
+    },
+
+    {
+      id: "asl",
+      label: "ASL Brightly",
+      description:
+        "ASL Brightly se encarga de crear y optimizar embudos de venta además de prospección en frío y adquisición de clientes por medio de publicidad paga, para ayudar a negocios a escalar su facturación en menos de 90 días.",
+      date: "Septiembre 2023",
+      image: Asl,
+      link: "https://asl-marketing.vercel.app",
     },
     {
       id: "oxilife",
       label: "Oxilife (En proceso)",
+      description:
+        "Limpia cualquier cuerpo de agua contaminado con esta calculadora sofisticada.",
+      date: "Diciembre 2022",
       image: Oxilife,
-      link: "#projects",
-    },
-    {
-      id: "asl",
-      label: "ASL",
-      image: Asl,
-      link: "https://asl-marketing.vercel.app",
     },
   ];
   const simpleProjects = [
@@ -59,30 +75,55 @@ export default function Projects() {
       <div className="w-full flex items-start justify-start">
         <h2 className={` text-2xl font-bold`}>Proyectos destacados</h2>
       </div>
-      <div
-        className={` w-full mt-8 rounded-2xl text-white flex justify-between`}
-      >
-        <div className="w-full flex flex-col justify-center items-center gap-9">
-          {projects.map((project) => {
-            return (
-              <div key={project.id} className="">
-                <div>
-                  <Link
-                    href={project.link}
-                    target="__blank"
-                    className=" hover:opacity-80 duration-200"
-                  >
-                    <Image
-                      alt={project.id}
-                      src={project.image}
-                      width={800}
-                      className="rounded-xl"
-                    />
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
+      <div className={` w-full mt-8 rounded-2xl  flex justify-between`}>
+        <div className="w-full flex flex-col justify-start items-start gap-9">
+          <ol className="relative border-s ">
+            {projects.map((project) => {
+              return (
+                <li className="mb-10 ms-4 " key={project.id}>
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border "></div>
+                  <time className="mb-1 text-sm font-normal leading-none ">
+                    {project.date}
+                  </time>
+                  <h3 className="text-lg font-semibold ">{project.label}</h3>
+                  <p className="mb-4 text-base font-normal  ">
+                    {project.description}
+                  </p>
+                  {project.link ? (
+                    <Link
+                      href={project.link}
+                      target="__blank"
+                      className="inline-flex items-center px-4 py-2 text-sm duration-200 font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                    >
+                      Visitar{" "}
+                      <svg
+                        className="w-3 h-3 ms-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </Link>
+                  ) : (
+                    <button
+                      disabled
+                      className="px-4 py-2 bg-gray-200 text-sm text-black rounded-lg hover:bg-gray-300 duration-300"
+                    >
+                      En proceso
+                    </button>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
         </div>
       </div>
       <div className="w-full flex items-start justify-start mt-32">

@@ -6,6 +6,9 @@ import About from "./components/Hero/about-me";
 import Projects from "./components/Hero/projects";
 import Technologies from "./components/Hero/technologies";
 import Contact from "./components/Hero/contact";
+import { AiOutlineArrowUp } from "react-icons/ai";
+
+import Link from "next/link";
 
 // import beach from "../public/beach.png";
 
@@ -20,11 +23,6 @@ export default function Home() {
           <div>
             <About />
           </div>
-          {/* <div className="w-full mt-3">
-            <video loop muted autoPlay className="rounded-lg">
-              <source src="/waves.mp4" type="video/mp4" />
-            </video>
-          </div> */}
           <div className="mt-10" id="projects">
             <Projects />
           </div>
@@ -34,31 +32,12 @@ export default function Home() {
           <div>
             <Contact />
           </div>
+          <div className="w-full flex justify-center items-center text-2xl mb-3">
+            <Link href="#home" className="hover:text-blue-500 duration-200">
+              <AiOutlineArrowUp />
+            </Link>
+          </div>
         </section>
-        {/* <section
-          className="w-full lg:p-0 p-4 lg:w-[560px] xl:w-[900px] flex flex-col justify-center items-center h-[80vh] mb-56"
-          id="home"
-        >
-          
-        </section>
-        <section
-          className="w-full lg:p-0 p-4 lg:w-[560px] xl:w-[900px] flex flex-col justify-center items-center mb-56 h-[90vh]"
-          id="about"
-        >
-          <About />
-        </section>
-        <section
-          className="w-full lg:p-0 p-4 lg:w-[560px] xl:w-[900px] flex flex-col justify-center items-center mb-16 mt-32 h-[90vh]"
-          id="projects"
-        >
-          <Projects />
-        </section>
-        <section
-          className="w-full lg:p-0 p-4 lg:w-[560px] xl:w-[900px] flex flex-col justify-center items-center mb-16 mt-32 h-[90vh]"
-          id="contact"
-        >
-          <Contact />
-        </section> */}
       </main>
     </>
   );

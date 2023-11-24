@@ -2,7 +2,7 @@
 import React from "react";
 
 import Image from "next/image";
-import AboutPhoto from "../../../public/about-photo.png";
+
 import Link from "next/link";
 import avatarPhoto from "../../../public/avatar.png";
 

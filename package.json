@@ -12,6 +12,7 @@
     "@splinetool/react-spline": "^2.2.6",
     "@vercel/analytics": "^1.1.1",
     "daisyui": "^3.9.4",
+    "flowbite": "^2.2.0",
     "geist": "^1.1.0",
     "mongoose": "^8.0.0",
     "next": "14.0.1",
