@@ -67,7 +67,7 @@ export default function Projects() {
       id: "imc",
       label: "Calculadora IMC",
       image: Imc,
-      link: "/",
+      link: "https://calculadora-imc-chini.vercel.app",
     },
   ];
   return (
