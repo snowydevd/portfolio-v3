@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <main className="w-full flex flex-col items-center justify-start">
-        <section className="w-full lg:w-[750px] lg:p-0 p-5 ">
+        <section className="w-full lg:w-[850px] lg:p-0 p-3 ">
           <div>
             <WelcomeHero />
           </div>

@@ -47,8 +47,8 @@ export default function ContactForm() {
   };
 
   return (
-    <main className="w-full lg:w-3/4">
-      <form method="POST" className="w-full p-5 ">
+    <main className="w-full">
+      <form method="POST" className="w-full lg:p-5 ">
         {/* FULL NAME */}
         <div className="flex flex-col m-5">
           <label className="font-semibold text-l lg:text-xl" htmlFor="fullname">

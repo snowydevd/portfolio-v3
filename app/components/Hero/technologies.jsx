@@ -101,66 +101,76 @@ export default function Technologies() {
     },
   ];
   return (
-    <div className="w-full flex-col flex lg:items-center items-center justify-center mt-16">
-      <div className="w-full flex items-start justify-start">
-        <h2 className={` text-2xl font-bold`}>Tecnologias</h2>
+    <div className="w-full flex-col lg:flex-row flex lg:items-center items-start justify-center lg:justify-between mt-16">
+      <div className="lg:hidden block">
+        <aside className="w-full flex flex-col items-start justify-start lg:text-left ">
+          <h2 className={`text-3xl lg:text-5xl font-bold`}>Tecnologias</h2>
+          <p>Tecnologias usadas en el transcurso de mi aprendizaje.</p>
+        </aside>
       </div>
-      {/* FRONT */}
-      <div className={`w-full mt-8 rounded-2xl p-3 flex justify-between`}>
-        <div className="w-full flex flex-col justify-start items-start  ">
-          <h3 className="text-xl font-bold">Front-end</h3>
-          <div className="w-full flex flex-wrap flex-row justify-start items-start gap-6">
-            {techs_front.map((tech) => {
-              return (
-                <div
-                  key={tech.id}
-                  className="flex flex-col justify-center items-center p-5"
-                >
-                  <h2 className="text-2xl">{tech.icon}</h2>
-                  <h1 className={`text-l font-bold`}>{tech.label}</h1>
-                </div>
-              );
-            })}
+      <section className="p-2 w-full">
+        <div className={`w-full mt-8 rounded-2xl flex justify-between`}>
+          <div className="w-full flex flex-col justify-start items-start  ">
+            <h3 className="text-xl font-bold">Front-end</h3>
+            <div className="w-full flex flex-wrap flex-row justify-start items-start gap-6">
+              {techs_front.map((tech) => {
+                return (
+                  <div
+                    key={tech.id}
+                    className="flex flex-col justify-center items-center p-5"
+                  >
+                    <h2 className="text-2xl">{tech.icon}</h2>
+                    <h1 className={`text-l font-bold`}>{tech.label}</h1>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-      {/* BACK */}
-      <div className={`w-full mt-8 rounded-2xl p-3 flex justify-between`}>
-        <div className="w-full flex flex-col justify-start items-start  ">
-          <h3 className="text-xl font-bold">Back-end</h3>
-          <div className="w-full flex flex-wrap flex-row justify-start items-start gap-6">
-            {techs_back.map((tech) => {
-              return (
-                <div
-                  key={tech.id}
-                  className="flex flex-col justify-center items-center p-5"
-                >
-                  <h2 className="text-2xl">{tech.icon}</h2>
-                  <h1 className={`text-l font-bold`}>{tech.label}</h1>
-                </div>
-              );
-            })}
+        {/* BACK */}
+        <div className={`w-full  rounded-2xl  flex justify-between`}>
+          <div className="w-full flex flex-col justify-start items-start  ">
+            <h3 className="text-xl font-bold">Back-end</h3>
+            <div className="w-full flex flex-wrap flex-row justify-start items-start gap-6">
+              {techs_back.map((tech) => {
+                return (
+                  <div
+                    key={tech.id}
+                    className="flex flex-col justify-center items-center p-5"
+                  >
+                    <h2 className="text-2xl">{tech.icon}</h2>
+                    <h1 className={`text-l font-bold`}>{tech.label}</h1>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-      {/* FRAMEWORKS */}
-      <div className={`w-full mt-8 rounded-2xl p-3 flex justify-between`}>
-        <div className="w-full flex flex-col justify-start items-start  ">
-          <h3 className="text-xl font-bold">Frameworks and tools</h3>
-          <div className="w-full flex flex-wrap flex-row justify-start items-start gap-6">
-            {frameworks.map((tech) => {
-              return (
-                <div
-                  key={tech.id}
-                  className="flex flex-col justify-center items-center p-5"
-                >
-                  <h2 className="text-2xl">{tech.icon}</h2>
-                  <h1 className={`text-l font-bold`}>{tech.label}</h1>
-                </div>
-              );
-            })}
+        {/* FRAMEWORKS */}
+        <div className={`w-full rounded-2xl  flex justify-between`}>
+          <div className="w-full flex flex-col justify-start items-start  ">
+            <h3 className="text-xl font-bold">Frameworks y herramientas</h3>
+            <div className="w-full flex flex-wrap flex-row justify-start items-start gap-6">
+              {frameworks.map((tech) => {
+                return (
+                  <div
+                    key={tech.id}
+                    className="flex flex-col justify-center items-center p-5"
+                  >
+                    <h2 className="text-2xl">{tech.icon}</h2>
+                    <h1 className={`text-l font-bold`}>{tech.label}</h1>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
+      </section>
+      <div className="lg:block hidden">
+        <aside className=" flex flex-col items-start justify-start lg:text-left mb-32 p-3">
+          <h2 className={`text-3xl lg:text-5xl font-bold`}>Tecnologias</h2>
+          <p>Tecnologias usadas en el transcurso de mi aprendizaje.</p>
+        </aside>
       </div>
     </div>
   );

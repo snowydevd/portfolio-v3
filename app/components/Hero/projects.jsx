@@ -43,7 +43,7 @@ export default function Projects() {
     },
     {
       id: "oxilife",
-      label: "Oxilife (En proceso)",
+      label: "Oxilife",
       description:
         "Limpia cualquier cuerpo de agua contaminado con esta calculadora sofisticada.",
       date: "Diciembre 2022",
@@ -73,7 +73,7 @@ export default function Projects() {
   return (
     <div className="w-full flex-col flex lg:items-center items-center justify-center mt-16">
       <div className="w-full flex items-start justify-start">
-        <h2 className={` text-2xl font-bold`}>Proyectos destacados</h2>
+        <h2 className={` text-3xl font-bold`}>Proyectos destacados</h2>
       </div>
       <div className={` w-full mt-8 rounded-2xl  flex justify-between`}>
         <div className="w-full flex flex-col justify-start items-start gap-9">
@@ -127,7 +127,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="w-full flex items-start justify-start mt-32">
-        <h2 className={` text-2xl font-bold`}>Otros proyectos</h2>
+        <h2 className={` text-3xl font-bold`}>Otros proyectos</h2>
       </div>
       <div
         className={` w-full mt-8 rounded-2xl flex justify-start items-start `}

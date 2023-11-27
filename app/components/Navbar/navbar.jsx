@@ -57,8 +57,8 @@ export default function Navbar() {
   ];
   // console.log(pathname);
   return (
-    <div className="w-full flex justify-center items-center sticky top-0 overflow-visible bg-base-100 z-50">
-      <nav className=" w-[750px] flex flex-row justify-between items-center border-b px-3 lg:px-0">
+    <div className="w-full flex justify-center items-center sticky top-0 overflow-visible z-50 backdrop-blur-sm">
+      <nav className=" w-[850px] flex flex-row justify-between items-center px-3 lg:px-0 ">
         <div className="lg:block hidden">
           <ul className={`flex items-center gap-4 `}>
             {links.map((link) => {
