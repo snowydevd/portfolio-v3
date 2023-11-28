@@ -101,14 +101,13 @@ export default function Technologies() {
     },
   ];
   return (
-    <div className="w-full flex-col lg:flex-row flex lg:items-center items-start justify-center lg:justify-between mt-16">
-      <div className="lg:hidden block">
+    <div className="w-full flex-col lg:flex-row flex lg:items-center items-start justify-center lg:justify-between gap-5 mt-16">
+      <div className="">
         <aside className="w-full flex flex-col items-start justify-start lg:text-left ">
-          <h2 className={`text-3xl lg:text-5xl font-bold`}>Tecnologias</h2>
-          <p>Tecnologias usadas en el transcurso de mi aprendizaje.</p>
+          <h2 className={`text-3xl lg:text-6xl font-bold`}>Tecnologias</h2>
         </aside>
       </div>
-      <section className="p-2 w-full">
+      <section className="p-2 w-full lg:border-l">
         <div className={`w-full mt-8 rounded-2xl flex justify-between`}>
           <div className="w-full flex flex-col justify-start items-start  ">
             <h3 className="text-xl font-bold">Front-end</h3>
@@ -166,12 +165,6 @@ export default function Technologies() {
           </div>
         </div>
       </section>
-      <div className="lg:block hidden">
-        <aside className=" flex flex-col items-start justify-start lg:text-left mb-32 p-3">
-          <h2 className={`text-3xl lg:text-5xl font-bold`}>Tecnologias</h2>
-          <p>Tecnologias usadas en el transcurso de mi aprendizaje.</p>
-        </aside>
-      </div>
     </div>
   );
 }

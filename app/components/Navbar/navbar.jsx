@@ -65,7 +65,7 @@ export default function Navbar() {
               return (
                 <li
                   key={link.id}
-                  className="text-sm font-light hover:text-gray-500 rounded-lg duration-100 py-4"
+                  className="text-sm font-light hover:text-zinc-400 rounded-lg duration-100 py-4"
                 >
                   <Link href={link.link}>{link.label}</Link>
                 </li>
