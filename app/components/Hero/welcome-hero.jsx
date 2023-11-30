@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function WelcomeHero() {
   return (
@@ -14,7 +15,6 @@ export default function WelcomeHero() {
           <h2 className={`text-2xl font-semibold`}>Web-Developer</h2>
         </div>
       </div>
-      <div className="w-2/4 "></div>
     </div>
   );
 }

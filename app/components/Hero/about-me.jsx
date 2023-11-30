@@ -3,8 +3,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AboutPhoto from "../../../public/about.jpg";
-
 import Avatar from "../../../public/avatar.png";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -12,12 +12,15 @@ export default function About() {
       <div
         className={` w-full rounded-2xl flex lg:flex-row flex-col justify-start items-start lg:justify-between  lg:items-center gap-3`}
       >
-        <Image
-          alt="Foto de mi"
-          src={Avatar}
-          width={80}
-          className=" lg:hidden block rounded-full"
-        />
+        <div>
+          <Image
+            alt="Foto de mi"
+            src={Avatar}
+            width={80}
+            className=" lg:hidden block rounded-full"
+          />
+        </div>
+
         <div className="w-full">
           <p className="mb-6">
             Soy Lautaro Chini, un apasionado desarrollador web de Uruguay. Mi
@@ -58,12 +61,14 @@ export default function About() {
             o por mis redes sociales.
           </p>
         </div>
-        <Image
-          alt="Foto de mi"
-          src={AboutPhoto}
-          width={160}
-          className=" rounded-lg lg:block hidden"
-        />
+        <div>
+          <Image
+            alt="Foto de mi"
+            src={AboutPhoto}
+            width={190}
+            className=" rounded-lg lg:block hidden"
+          />
+        </div>
       </div>
     </div>
   );

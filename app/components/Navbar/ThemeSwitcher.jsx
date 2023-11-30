@@ -23,15 +23,15 @@ const ThemeSwitcher = () => {
         <button
           value={theme}
           onClick={(e) => setTheme("lofi")}
-          className="duration-100 hover:text-gray-400 rounded-lg p-3 text-2xl w-fit"
+          className="duration-200 hover:text-gray-400 hover:rotate-180 rounded-lg p-3 text-2xl w-fit"
         >
-          <BiSolidSun />
+          <BiSolidSun className="" />
         </button>
       ) : (
         <button
           value={theme}
           onClick={(e) => setTheme("black")}
-          className="duration-100  hover:text-gray-400 rounded-lg p-3 text-2xl w-fit"
+          className="duration-200 hover:text-gray-400 hover:rotate-12 rounded-lg p-3 text-2xl w-fit"
         >
           <BiSolidMoon />
         </button>
