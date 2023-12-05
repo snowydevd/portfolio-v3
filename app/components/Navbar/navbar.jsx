@@ -26,11 +26,7 @@ export default function Navbar() {
       label: "Proyectos",
       link: "#projects",
     },
-    {
-      id: "tecnologias",
-      label: "Tecnologias",
-      link: "#technologies",
-    },
+
     {
       id: "contact",
       label: "Contacto",

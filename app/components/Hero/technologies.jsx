@@ -101,13 +101,16 @@ export default function Technologies() {
     },
   ];
   return (
-    <div className="w-full flex-col lg:flex-row flex lg:items-center items-start justify-center lg:justify-between gap-5 mt-16">
+    <div className="w-full flex-col lg:flex-row flex lg:items-start items-start justify-center lg:justify-between gap-12 mt-16">
       <div className="">
         <aside className="w-full flex flex-col items-start justify-start lg:text-left ">
-          <h2 className={`text-3xl lg:text-6xl font-bold`}>Tecnologias</h2>
+          <h2 className={`text-3xl lg:text-5xl font-bold mt-24`}>
+            Tecnologias
+          </h2>
+          <p>Tecnologias aplicadas a lo largo de mi trayectoria</p>
         </aside>
       </div>
-      <section className="p-2 w-full lg:border-l">
+      <section className="p-2 w-full flex flex-col gap-6">
         <div className={`w-full mt-8 rounded-2xl flex justify-between`}>
           <div className="w-full flex flex-col justify-start items-start  ">
             <h3 className="text-xl font-bold">Front-end</h3>

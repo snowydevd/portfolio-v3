@@ -26,9 +26,9 @@ export default function Home() {
           <div className="mt-10" id="projects">
             <Projects />
           </div>
-          <div className="mt-10" id="technologies">
+          {/* <div className="mt-10" id="technologies">
             <Technologies />
-          </div>
+          </div> */}
           <div>
             <Contact />
           </div>

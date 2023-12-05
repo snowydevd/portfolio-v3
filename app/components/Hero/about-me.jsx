@@ -12,14 +12,14 @@ export default function About() {
       <div
         className={` w-full rounded-2xl flex lg:flex-row flex-col justify-start items-start lg:justify-between  lg:items-center gap-3`}
       >
-        <div>
+        {/* <div>
           <Image
             alt="Foto de mi"
             src={Avatar}
             width={80}
             className=" lg:hidden block rounded-full"
           />
-        </div>
+        </div> */}
 
         <div className="w-full">
           <p className="mb-6">
@@ -62,12 +62,12 @@ export default function About() {
           </p>
         </div>
         <div>
-          <Image
+          {/* <Image
             alt="Foto de mi"
             src={AboutPhoto}
             width={190}
             className=" rounded-lg lg:block hidden"
-          />
+          /> */}
         </div>
       </div>
     </div>
