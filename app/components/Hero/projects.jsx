@@ -72,9 +72,9 @@ export default function Projects() {
   ];
   return (
     <section className="w-full flex-col flex lg:items-center items-center justify-center mt-16">
-      <div className="flex justify-between items-start gap-9">
-        <div className="w-2/4 flex flex-col items-start justify-start mt-24">
-          <h2 className={` text-3xl lg:text-5xl font-bold`}>
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-9">
+        <div className="w-full lg:w-2/4 flex flex-col items-start justify-start mt-24">
+          <h2 className={`text-3xl lg:text-5xl font-bold`}>
             Proyectos destacados
           </h2>
           <p>Proyectos que he realizado a lo largo de mi trayectoria.</p>
